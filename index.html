@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bienvenidos a la Cueva de Nacho</title>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./estilos/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">LCN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+      <div class="container mt-5">
+        <h1 class="text-center">Bienvenidos a la Cueva de Nacho</h1>
+        <div class="cotizaciones text-center">
+          <h2>Cotizaciones hoy:</h2>
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-4">
+              <div class="card">
+                <img src="./assets/bandera usa.png" class="card-img-top" alt="Dólar">
+                <div class="card-body">
+                  <h5 class="card-title">DOLAR</h5>
+                  <p class="card-text">$250</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card">
+                <img src="./assets/brasil.png" class="card-img-top" alt="Real">
+                <div class="card-body">
+                  <h5 class="card-title">REAL</h5>
+                  <p class="card-text">$50</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card">
+                <img src="./assets/europa.png" class="card-img-top" alt="Euro">
+                <div class="card-body">
+                  <h5 class="card-title">EURO</h5>
+                  <p class="card-text">$255</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card">
+                <img src="./assets/uruguay.png" class="card-img-top" alt="Peso Uruguayo">
+                <div class="card-body">
+                  <h5 class="card-title">UYU</h5>
+                  <p class="card-text">$33</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+<div class="container">
+    <h2>Compra tu divisa</h2>
+    <form id="divisaForm" class="text-center">
+      <div class="form-group">
+        <label for="divisa">Divisa:</label>
+        <select class="form-control" id="divisa" name="divisa">
+          <option value="USD">USD</option>
+          <option value="REAL">REAL</option>
+          <option value="EUR">EUR</option>
+          <option value="UYU">UYU</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" class="form-control" id="cantidad" name="cantidad" step="0.01" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+  
+    <div id="total" class="mt-3"></div>
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
